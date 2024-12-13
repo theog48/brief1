@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biographie de Swain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Swain, le Seigneur des Noxiens</h1>
+        <figure>
+            <img src="swain.jpg" alt="Photo de Swain" />
+            <figcaption>Swain, le Seigneur des Noxiens</figcaption>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#oeuvres">Œuvres</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#citations">Citations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Biographie -->
+    <section id="biographie">
+        <h2>Biographie</h2>
+        <p>Swain est un personnage légendaire de la nation de Noxus. Anciennement un général brillant, il a utilisé ses talents de stratège pour conquérir et diriger Noxus d'une main de fer. Après avoir fait face à une trahison, il a été transformé en un homme plus puissant que jamais, possédant des pouvoirs magiques issus des âmes des ennemis qu'il a vaincus.</p>
+        <h3>Dates clés</h3>
+        <ul>
+            <li>1943 : Swain naît dans la capitale de Noxus.</li>
+            <li>1970 : Il devient général de l'armée Noxienne.</li>
+            <li>2000 : Swain prend le pouvoir après la chute du précédent leader.</li>
+            <li>2015 : Il est tué puis ressuscité grâce à l'énergie des âmes.</li>
+            <!-- Ajouter d'autres dates si nécessaire -->
+        </ul>
+    </section>
+
+    <!-- Section Galerie -->
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="swain1.jpg" alt="Swain en pleine bataille">
+            <img src="swain2.jpg" alt="Swain avec son épée">
+            <img src="swain3.jpg" alt="Swain et son corbeau">
+            <img src="swain4.jpg" alt="Swain avec ses pouvoirs magiques">
+            <img src="swain5.jpg" alt="Swain dans la salle du trône">
+        </div>
+    </section>
+
+    <!-- Section Citations -->
+    <section id="citations">
+        <h2>Citations célèbres</h2>
+        <blockquote>"Le pouvoir, comme les âmes que je récolte, se trouve dans les ténèbres."</blockquote>
+        <blockquote>"Noxus se redresse toujours, et j'en suis la lame qui tranche."</blockquote>
+    </section>
+
+    <!-- Section Secret -->
+    <section id="secret">
+        <h2>Secret</h2>
+        <button id="revealSecret">Dévoiler le secret</button>
+        <p id="secretText" style="display:none;">Le véritable secret de Swain réside dans son lien avec l'esprit du corbeau, un pouvoir qu'il utilise pour espionner et manipuler ses ennemis à travers le monde.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Swain - League of Legends. Tous droits réservés.</p>
+        <p><a href="#">Mentions légales</a></p>
+    </footer>
+
+    <!-- JavaScript pour révéler le secret -->
+    <script>
+        document.getElementById("revealSecret").addEventListener("click", function() {
+            document.getElementById("secretText").style.display = "block";
+        });
+    </script>
+</body>
+</html>
