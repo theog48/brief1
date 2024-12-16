@@ -6,7 +6,7 @@ const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-image');
 const closeBtn = document.getElementById('close-btn');
 
-// Sélectionne toutes les images de la galerie
+// Sélectionne toutes les images de la galerie 
 const images = document.querySelectorAll('.galerie__item');
 
 images.forEach(image => {
