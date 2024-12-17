@@ -238,3 +238,37 @@ html {
 .biograpgie__item{
     list-style: none;
 }
+.biographie__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.biographie__item {
+    background-color: #333;
+    border-radius: 2rem;
+    padding: 15px 25px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.05);
+    color: red;
+    font-weight: bold;
+}
+.biographie__container{
+    display: flex;
+    align-items: center;
+}
+.biographie__swain {
+    width: 400px;
+    margin-right: 20px;
+    border-radius: 32px;
+}
+.biographie__list {
+    list-style-type: none;
+    padding: 0;
+}
