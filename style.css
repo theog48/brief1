@@ -277,3 +277,93 @@ html {
 .errorMessages{
     color: red
 }
+/* Media Queries pour Tablette */
+@media screen and (max-width: 1024px) {
+    /* En-tête */
+    header img {
+        max-width: 300px;
+    }
+
+    .galerie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie__item {
+        max-width: 300px;
+        margin: 20px 0;
+    }
+
+    .biographie__container {
+        flex-direction: column;
+    }
+
+    .biographie__swain {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+/* Media Queries pour Mobile */
+@media screen and (max-width: 768px) {
+    /* En-tête */
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header img {
+        max-width: 250px;
+    }
+
+    /* Menu */
+    nav ul {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Sections */
+    section {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    /* Galerie */
+    .galerie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie__item {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    /* Formulaire */
+    form {
+        width: 100%;
+    }
+
+    /* Biographie */
+    .biographie__container {
+        flex-direction: column;
+    }
+
+    .biographie__swain {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Bouton */
+    #revealSecret {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
+}
