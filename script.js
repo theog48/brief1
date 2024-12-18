@@ -23,6 +23,9 @@ if (event.target === modal) {
     modal.style.display = 'none';
 }
 });
+
+
+
 document.getElementById('contact__form').addEventListener('submit', function(event) {
     event.preventDefault();  // Empêche l'envoi du formulaire pour vérifier les champs
 
@@ -63,3 +66,18 @@ document.getElementById('contact__form').addEventListener('submit', function(eve
         alert("Formulaire soumis avec succès !");
     }
 });
+
+//fonction pour calculer les jours
+function calculerJours(dateSwain){
+    const unJour = 24*60*60*1000;
+    const date = new Date(dateSwain);
+    const aujourdHui = new Date();
+    return Math.floor((aujourdHui-date)/unJour)
+}
+//Afficher le jour
+function afficherJours(){
+    const dateNaissance = '1943-07-27';
+    const jours = calculerJours(dateNaissance);
+    document.getElementById('joursEcoules').innerHTML = `Né depuis : ${jours} jours.`;
+}
+window.onload = afficherJours;
