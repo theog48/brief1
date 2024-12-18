@@ -63,7 +63,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 
 section h2 {
     text-align: center;
@@ -271,4 +271,7 @@ html {
 .biographie__list {
     list-style-type: none;
     padding: 0;
+}
+.errorMessages{
+    color: red
 }
